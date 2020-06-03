@@ -1,0 +1,133 @@
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+nav {
+  background-color: #001122;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  margin: 0;
+}
+
+.navBtn {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px; 
+}
+
+.navBtn:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.banner {
+  background-color: black;
+  background-image: url("../images/circuits.jpg");
+  color: white;
+  font-family: 'Courier New', 'Courier', monospace;
+  font-weight: normal;
+  text-shadow: 4px 4px 4px black;
+  height: 150px;
+  padding: 30px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner h1 {
+  font-size: 90px;
+  margin: 0;
+  padding: 5px;
+  line-height: 90px;
+}
+
+.banner h3 {
+  background-color: rgba(0,0,0,0.4);
+  font-size: 25px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 5px 20px;
+}
+
+.mainRow {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.mainPic {
+  max-width: 100%;
+  border-radius: 50%;
+  margin: 30px;
+}
+
+.mainText {
+  width: 50%;
+  margin: 30px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.icon:hover {
+  filter: brightness(80%);
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .banner {
+    height: auto;
+    padding: 30px;
+  }
+
+  .banner h1 {
+    text-align: center;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainRow {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainPic {
+    max-width: 200px;
+    margin: 40px 0 0 0;
+  }
+
+  .mainText {
+    width: 70%;
+  }
+}
