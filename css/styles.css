@@ -4,6 +4,10 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 20px;
   line-height: 30px;
@@ -64,32 +68,81 @@ nav {
   padding: 5px 20px;
 }
 
+main {
+  padding: 50px;
+}
+
 .mainRow {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  align-items: center;
 }
 
 .mainPic {
-  max-width: 100%;
   border-radius: 50%;
   margin: 30px;
+  max-height: 550px;
+  width: auto;
+  height: auto;
+}
+
+.projPic {
+  max-width: 100%;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.projPic:hover {
+  filter: brightness(50%);
 }
 
 .mainText {
   width: 50%;
-  margin: 30px;
+  margin: 0 30px;
+}
+
+.mainBtn {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.mainBtn:hover {
+  background-color: #336688;
+  color: white;
+}
+
+#projects {
+  margin: 30px 0;
 }
 
 .icons {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  margin: 0 auto;
+}
+
+.iconHelper {
+  width: 120px;
+  height: 100px;
+  text-align: center;
 }
 
 .icon:hover {
@@ -98,7 +151,18 @@ nav {
 
 @media (max-width: 800px) {
   nav {
-    display: none;
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  .navBtn {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 30px 0;
   }
 
   .banner {
@@ -107,12 +171,12 @@ nav {
   }
 
   .banner h1 {
+    font-size: 60px;
     text-align: center;
   }
 
   main {
     margin: 0;
-    padding: 0;
   }
 
   .mainRow {
@@ -122,12 +186,33 @@ nav {
     padding: 0;
   }
 
+  .mainRow.rev {
+    flex-direction: column-reverse;
+  }
+
   .mainPic {
     max-width: 200px;
     margin: 40px 0 0 0;
   }
 
+  .projPic {
+    max-height: 250px;
+    max-width: 90%;
+  }
+
   .mainText {
-    width: 70%;
+    width: 90%;
+  }
+
+  .mainText h1 {
+    font-size: 20px;
+  }
+
+  .mainText p {
+    font-size: 16px;
+  }
+
+  .icons {
+    flex-wrap: wrap;
   }
 }

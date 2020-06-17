@@ -10,11 +10,13 @@
 <body>
   <nav>
     <a href="#aboutMe">
-      <button class="navBtn" id="home">Home</button>
+      <button class="navBtn" id="aboutMeBtn">About Me</button>
     </a>
-    <button class="navBtn" id="aboutme">About Me</button>
-    <button class="navBtn" id="projects">Projects</button>
-    <button class="navBtn" id="addinfo">More About Me</button>
+    <a href="#projects">
+      <button class="navBtn" id="projectsBtn">Projects</button>
+    </a>
+    <button class="navBtn" id="contactMeBtn">Contact Me</button>
+    <button class="navBtn" id="addInfoBtn">More About Me</button>
   </nav>
 
   <div class="banner">
@@ -28,29 +30,98 @@
 
       <div class="mainText">
         <h1>About Me</h1>
-        <p>I'm a software engineer and former electrical engineer looking for technical challenges and projects! 
-        <br><br>
-        Please check out the front end and full stack web development projects I've been learning in the past year. 
+        <p>I'm a software engineer and former electrical engineer looking for technical challenges and projects! I have completed a PhD in electrical engineering and have always been interested in algorithms, leading me to discover my love for programming and software development.
         </p>
         <div class="icons">
-          <a href="https://github.com/drewhsu86" target=_blank>
-          <img  class="icon" src="images/icon_github.gif"
-          alt="link to my github page">
-          </a>
-          <a href="https://www.linkedin.com/in/drew-hsu/" target=_blank>
-            <img class="icon" src="images/icon_linkedin.png"
-            alt="link to my linkedin">
-          </a>
-          <a href="resume_ah.pdf" target=_blank>
-            <img class="icon" src="images/icon_resume.jpg"
-            alt="pdf copy of my resume">
-          </a>
+
+          <div class="gridItem">
+            <a href="https://github.com/drewhsu86" target=_blank>
+            <img  class="icon" src="images/icon_github.gif"
+            alt="link to my github page">
+            </a>
+            <div class="iconHelper">
+              My Github 
+            </div>
+          </div>
+
+          <div class="gridItem">
+            <a href="https://www.linkedin.com/in/drew-hsu/" target=_blank>
+              <img class="icon" src="images/icon_linkedin.png"
+              alt="link to my linkedin">
+            </a>
+            <div class="iconHelper">
+              My LinkedIn
+            </div>
+          </div>
+
+          <div class="gridItem">
+            <a href="resume_ah.pdf" target=_blank>
+              <img class="icon" src="images/icon_resume.jpg"
+              alt="pdf copy of my resume">
+            </a>
+            <div class="iconHelper">
+              My resume 
+            </div>
+          </div>
+
+          <div class="gridItem">
+            <a href="https://dev.to/drewhsu86" target=_blank>
+              <img class="icon" src="images/icon_devto.png"
+              alt="my dev.to blog posts">
+            </a>
+            <div class="iconHelper">
+              My dev.to blog 
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="mainRow" id="projects">
+    <hr />
 
+    <h1 id="projects">Projects</h1>
+    <div class="mainRow rev">
+      <div class="mainText"> 
+        <h1>Boxed.com Mockup</h1>
+        <p>
+        This project is a fullstack application that tries to replicate the aesthetic of the e-commerce site, <a href="https://www.boxed.com" target="_blank">Boxed.come</a>.  
+        <br /><br />
+        Please check out the deployed site as well as the Github page to learn more! 
+        </p>
+        <a href="http://boxed-ux-sei-p3.surge.sh/" target="_blank">
+          <button class="mainBtn">Deployed Project</button>
+        </a>
+        <a href="https://github.com/drewhsu86/Boxed-All-Bulk-Cart" target="_blank">
+          <button class="mainBtn">Project Github</button>
+        </a>
+      </div>
+      <a href="https://boxed-ux-sei-p3.surge.sh" target="_blank">
+        <img src="images/proj_boxed.gif" class="projPic" alt="full stack project making a mockup of boxed.com">
+        </img>
+      </a>
+    </div>
+
+    <div class="mainRow">
+      <a href="https://quizmon.surge.sh/" target="_blank">
+        <img src="images/proj_boxed.gif" class="projPic" alt="full stack project making a mockup of boxed.com">
+        </img>
+      </a>
+
+      <div class="mainText"> 
+        <h1>Boxed.com Mockup</h1>
+        <p>
+        This project is a fullstack application that allows users to create multiple choice questions and try to answer those written by other users. Currently topics include: Javascript, Ruby, Python, Data Structures and Miscellaneous. 
+        <br /><br />
+        Please check out the deployed site as well as the Github page to learn more! 
+        </p>
+        <a href="https://quizmon.surge.sh/" target="_blank">
+          <button class="mainBtn">Deployed Project</button>
+        </a>
+        <a href="https://github.com/drewhsu86/Quizmon" target="_blank">
+          <button class="mainBtn">Project Github</button>
+        </a>
+      </div>
 
     </div>
   </main>
