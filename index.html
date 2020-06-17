@@ -8,6 +8,7 @@
   <title>Andrew Hsu: Software Engineer</title>
 </head>
 <body>
+  <div class="navToggle"> &nbsp; Hide Menu </div>
   <nav>
     <a href="#aboutMe">
       <button class="navBtn" id="aboutMeBtn">About Me</button>
@@ -80,15 +81,20 @@
 
     <hr />
 
-    <h1 id="projects">Projects</h1>
+    <h1 id="projects" class="jumpTo">Projects</h1>
     <div class="mainRow rev">
       <div class="mainText"> 
         <h1>Boxed.com Mockup</h1>
         <p>
         This project is a fullstack application that tries to replicate the aesthetic of the e-commerce site, <a href="https://www.boxed.com" target="_blank">Boxed.come</a>.  
-        <br /><br />
-        Please check out the deployed site as well as the Github page to learn more! 
         </p>
+
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Frontend - ReactJS</li>
+          <li>Backend - Express (and MongoDB)</li>
+        </ul>
+
         <a href="http://boxed-ux-sei-p3.surge.sh/" target="_blank">
           <button class="mainBtn">Deployed Project</button>
         </a>
@@ -102,19 +108,24 @@
       </a>
     </div>
 
+    <hr class="hrSmall">
+
     <div class="mainRow">
       <a href="https://quizmon.surge.sh/" target="_blank">
-        <img src="images/proj_boxed.gif" class="projPic" alt="full stack project making a mockup of boxed.com">
+        <img src="images/proj_quizmon.png" class="projPic" alt="full stack project quizmon">
         </img>
       </a>
 
       <div class="mainText"> 
-        <h1>Boxed.com Mockup</h1>
+        <h1>Quizmon</h1>
         <p>
-        This project is a fullstack application that allows users to create multiple choice questions and try to answer those written by other users. Currently topics include: Javascript, Ruby, Python, Data Structures and Miscellaneous. 
-        <br /><br />
-        Please check out the deployed site as well as the Github page to learn more! 
+        Allows users to create multiple choice questions and try to answer those written by other users. Currently topics include: Javascript, Ruby, Python, Data Structures and Miscellaneous. Hand-rolled authorization system on the backend to learn about bcrypt and JSON web tokens. 
         </p>
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Frontend - ReactJS</li>
+          <li>Backend - Ruby on Rails (and Postgresql)</li>
+        </ul> 
         <a href="https://quizmon.surge.sh/" target="_blank">
           <button class="mainBtn">Deployed Project</button>
         </a>
@@ -124,6 +135,41 @@
       </div>
 
     </div>
+
+    <hr class="hrSmall">
+
+    <div class="mainRow rev">
+
+      <div class="mainText"> 
+        <h1>Knights of Coding</h1>
+        <p>
+        Have you ever done coding challenges on <a href="https://www.codewars.com" target="_blank">Codewars.com</a>? There are so many coding challenges in a variety of programming languages, that it can be hard to keep track. This app uses the <a href="https://https://dev.codewars.com/" target="_blank">Codewars API</a> to grab Codewars users by their username, and display a grid of all the questions they've completed. It also keeps track of your favorite users!
+        </p>
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Frontend - ReactJS</li>
+          <li>Backend - none (external API used)</li>
+        </ul> 
+        
+        <a href="https://knights-of-coding.netlify.app/" target="_blank">
+          <button class="mainBtn">Deployed Project</button>
+        </a>
+        <a href="https://github.com/drewhsu86/Knights-of-Coding" target="_blank">
+          <button class="mainBtn">Project Github</button>
+        </a>
+      </div>
+
+      <a href="https://knights-of-coding.netlify.app/" target="_blank">
+        <img src="images/proj_knightsOfCoding.png" class="projPic" alt="frontend react project knights of coding">
+        </img>
+      </a>
+
+    </div>
+
+    <hr> 
+
+    <h1 id="contactMe" class="jumpTo"></h1>
+
   </main>
 
 </body>

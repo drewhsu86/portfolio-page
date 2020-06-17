@@ -22,6 +22,22 @@ nav {
   width: 100vw;
   height: 80px;
   margin: 0;
+  padding: 0;
+}
+
+.navToggle {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  padding: 13px 0 17px 0;
+}
+
+.navToggle:hover {
+  background-color: #225588;
+  color: orange;
 }
 
 .navBtn {
@@ -45,6 +61,7 @@ nav {
   font-family: 'Courier New', 'Courier', monospace;
   font-weight: normal;
   text-shadow: 4px 4px 4px black;
+  width: vw;
   height: 150px;
   padding: 30px 50px 0 50px;
   display: flex;
@@ -76,6 +93,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .mainPic {
@@ -116,7 +134,7 @@ main {
   color: white;
 }
 
-#projects {
+.jumpTo {
   margin: 30px 0;
 }
 
@@ -149,7 +167,11 @@ main {
   filter: brightness(80%);
 }
 
-@media (max-width: 800px) {
+.hrSmall {
+  display: none;
+}
+
+@media (max-width: 1100px) {
   nav {
     flex-direction: column;
     height: auto;
@@ -205,7 +227,7 @@ main {
   }
 
   .mainText h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .mainText p {
@@ -214,5 +236,16 @@ main {
 
   .icons {
     flex-wrap: wrap;
+  }
+
+ .hrSmall {
+   display: block;
+   margin-bottom: 30px;
+ }
+}
+
+@media (min-width: 1100px) {
+  .navToggle {
+    display: none;
   }
 }
