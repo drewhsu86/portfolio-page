@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/main.js" defer></script>
   <link rel="stylesheet" href="css/styles.css"></link>
+
+  <!-- from favicon generator: https://favicon.io/favicon-generator/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
   <title>Andrew Hsu: Software Engineer</title>
 </head>
 <body>
@@ -16,8 +23,9 @@
     <a href="#projects">
       <button class="navBtn" id="projectsBtn">Projects</button>
     </a>
+    <a href="#contactMe">
     <button class="navBtn" id="contactMeBtn">Contact Me</button>
-    <button class="navBtn" id="addInfoBtn">More About Me</button>
+    </a>
   </nav>
 
   <div class="banner">
@@ -37,7 +45,7 @@
 
           <div class="gridItem">
             <a href="https://github.com/drewhsu86" target=_blank>
-            <img  class="icon" src="images/icon_github.gif"
+            <img  class="icon" src="images/icon_github.png"
             alt="link to my github page">
             </a>
             <div class="iconHelper">
@@ -56,7 +64,7 @@
           </div>
 
           <div class="gridItem">
-            <a href="resume_ah.pdf" target=_blank>
+            <a href="images/andrew-hsu-Resume2020.pdf" target=_blank>
               <img class="icon" src="images/icon_resume.jpg"
               alt="pdf copy of my resume">
             </a>
@@ -86,7 +94,7 @@
       <div class="mainText"> 
         <h1>Boxed.com Mockup</h1>
         <p>
-        This project is a fullstack application that tries to replicate the aesthetic of the e-commerce site, <a href="https://www.boxed.com" target="_blank">Boxed.come</a>.  
+        This project is a fullstack application that tries to replicate the aesthetic of the e-commerce site, <a href="https://www.boxed.com" target="_blank">Boxed.com</a>. Worked with a great group of software engineers and UX/UI developers to bring this to MVP in only a week.
         </p>
 
         <h3>Tech Stack</h3>
@@ -96,10 +104,14 @@
         </ul>
 
         <a href="http://boxed-ux-sei-p3.surge.sh/" target="_blank">
-          <button class="mainBtn">Deployed Project</button>
+          <button class="mainBtn">Deployed Project 
+            <img src="images/icon_surge.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
         <a href="https://github.com/drewhsu86/Boxed-All-Bulk-Cart" target="_blank">
-          <button class="mainBtn">Project Github</button>
+          <button class="mainBtn">Project Github
+            <img src="images/icon_github.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
       </div>
       <a href="https://boxed-ux-sei-p3.surge.sh" target="_blank">
@@ -111,26 +123,35 @@
     <hr class="hrSmall">
 
     <div class="mainRow">
-      <a href="https://quizmon.surge.sh/" target="_blank">
-        <img src="images/proj_quizmon.png" class="projPic" alt="full stack project quizmon">
+      <a href="https://trex-tickets.netlify.app/" target="_blank">
+        <img src="images/proj_trexTickets.png" class="projPic" alt="full stack project trex tickets">
         </img>
       </a>
 
       <div class="mainText"> 
-        <h1>Quizmon</h1>
+        <h1>T-Rex Tickets</h1>
         <p>
-        Allows users to create multiple choice questions and try to answer those written by other users. Currently topics include: Javascript, Ruby, Python, Data Structures and Miscellaneous. Hand-rolled authorization system on the backend to learn about bcrypt and JSON web tokens. 
+        A demo of a ticket app that allows digital tickets to be scanned as QR codes. I built the backend and part of the frontend of the T-Rex Tickets app while working with a great team at a hackathon hosted by <a href="https://generalassemb.ly/" target="_blank">General Assembly</a> and <a href="https://www.octagon.com/" target="_blank">Octagon</a>. Please check out the Github README for more details as well as a link to a demo QR scanner app!
         </p>
         <h3>Tech Stack</h3>
         <ul>
           <li>Frontend - ReactJS</li>
-          <li>Backend - Ruby on Rails (and Postgresql)</li>
+          <li>Backend - ExpressJS</li>
         </ul> 
-        <a href="https://quizmon.surge.sh/" target="_blank">
-          <button class="mainBtn">Deployed Project</button>
+        <a href="https://trex-tickets.netlify.app/" target="_blank">
+          <button class="mainBtn">Deployed Project
+            <img src="images/icon_surge.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
-        <a href="https://github.com/drewhsu86/Quizmon" target="_blank">
-          <button class="mainBtn">Project Github</button>
+        <a href="https://https//trex-tickets-qr-reader.surge.sh/" target="_blank">
+          <button class="mainBtn">Deployed Scanner App
+            <img src="images/icon_surge.png" class="buttonIcon" alt="button icon">
+          </button>
+        </a>
+        <a href="https://github.com/drewhsu86/Tyrannosaurus-Tickets" target="_blank">
+          <button class="mainBtn">Project Github
+            <img src="images/icon_github.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
       </div>
 
@@ -141,26 +162,31 @@
     <div class="mainRow rev">
 
       <div class="mainText"> 
-        <h1>Knights of Coding</h1>
+        <h1>Eitri Site Journal</h1>
         <p>
-        Have you ever done coding challenges on <a href="https://www.codewars.com" target="_blank">Codewars.com</a>? There are so many coding challenges in a variety of programming languages, that it can be hard to keep track. This app uses the <a href="https://https://dev.codewars.com/" target="_blank">Codewars API</a> to grab Codewars users by their username, and display a grid of all the questions they've completed. It also keeps track of your favorite users!
+        A solar development and engineering company, <a href="https://eitrifoundry.com" target="_blank">Eitri Foundry</a>, needed a tool for the director of operations to make journal entries about their construction sites. I created a web app where these entries could be recorded, as well as have pictures from a phone's camera uploaded.
         </p>
         <h3>Tech Stack</h3>
         <ul>
           <li>Frontend - ReactJS</li>
-          <li>Backend - none (external API used)</li>
+          <li>Backend - ExpressJS, MongoDB</li>
+          <li>Other - Imgur API</li>
         </ul> 
         
-        <a href="https://knights-of-coding.netlify.app/" target="_blank">
-          <button class="mainBtn">Deployed Project</button>
+        <a href="https://eitri-site-journal.surge.sh" target="_blank">
+          <button class="mainBtn">Deployed Project
+            <img src="images/icon_surge.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
-        <a href="https://github.com/drewhsu86/Knights-of-Coding" target="_blank">
-          <button class="mainBtn">Project Github</button>
+        <a href="https://github.com/drewhsu86/eitri-site-journal" target="_blank">
+          <button class="mainBtn">Project Github
+            <img src="images/icon_github.png" class="buttonIcon" alt="button icon">
+          </button>
         </a>
       </div>
 
-      <a href="https://knights-of-coding.netlify.app/" target="_blank">
-        <img src="images/proj_knightsOfCoding.png" class="projPic" alt="frontend react project knights of coding">
+      <a href="https://eitri-site-journal.surge.sh" target="_blank">
+        <img src="images/proj_eitrisitejournal.png" class="projPic" alt="full stack project Eitri site journal">
         </img>
       </a>
 
@@ -168,9 +194,73 @@
 
     <hr> 
 
-    <h1 id="contactMe" class="jumpTo"></h1>
+    <h1 id="contactMe" class="jumpTo">Contact Me</h1>
+
+      <div class="mainText whole">
+        <p>
+          Thank you for checking out my page! 
+          <br>
+          The best way to contact me is by email or over LinkedIn. 
+          <br>
+          Please use one of the links provided below.
+        </p>
+        <p>
+          Copy my email to clipboard: <span id="copyEmail">drewhsu86@gmail.com</span> <input type="text" value="drewhsu86@gmail.com" id="copyEmailInput" style="display:none"> 
+          
+        </p>
+      </div>
+
+      <div class="mainText whole">
+        <div class="flexWrap">
+          <div class="flexItem">
+           <a href="mailto:drewhsu86@gmail.com">
+              <button class="mainBtn"><img src="images/icon_mail.png" class="buttonIcon" alt="button icon"> Email Me </button>
+            </a>
+          </div>
+          <div class="flexItem">
+            <a href="https://github.com/drewhsu86" target="_blank">
+              <button class="mainBtn">
+                <img src="images/icon_github.png" class="buttonIcon" alt="button icon">
+                My Github
+              </button>
+            </a>
+          </div>
+          <div class="flexItem">
+             <a href="https://www.linkedin.com/in/drew-hsu/" target="_blank">
+              <button class="mainBtn">
+                <img src="images/icon_linkedin.png" class="buttonIcon" alt="button icon">
+                My LinkedIn
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
 
   </main>
+
+  <footer>
+    <div class="footerIcons">
+ 
+        <a href="https://github.com/drewhsu86" target=_blank>
+        <img  class="icon" src="images/icon_github.png"
+        alt="link to my github page">
+        </a>
+
+        <a href="https://www.linkedin.com/in/drew-hsu/" target=_blank>
+          <img class="icon" src="images/icon_linkedin.png"
+          alt="link to my linkedin">
+        </a>
+
+        <a href="https://dev.to/drewhsu86" target=_blank>
+          <img class="icon" src="images/icon_devto.png"
+          alt="my dev.to blog posts">
+        </a>
+
+    </div>
+    <p>
+      Thank you for visiting!
+    </p>
+  </footer>
 
 </body>
 </html>
